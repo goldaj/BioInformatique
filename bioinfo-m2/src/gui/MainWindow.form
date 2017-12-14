@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="views.MainWindow">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="864" height="670"/>
+    </constraints>
+    <properties>
+      <background color="-11512982"/>
+      <focusable value="true"/>
+      <font name="Bookman Old Style"/>
+      <foreground color="FFFFFF"/>
+      <preferredSize width="1000" height="500"/>
+    </properties>
+    <border type="none">
+      <title-color color="-1"/>
+    </border>
+    <children>
+      <grid id="97005" binding="topPannel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-11512982"/>
+          <font name="Bookman Old Style"/>
+          <foreground color="FFFFFF"/>
+        </properties>
+        <border type="none">
+          <title-color color="-1"/>
+        </border>
+        <children>
+          <scrollpane id="d325a" binding="kingdomScrollPane">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-11512982"/>
+              <doubleBuffered value="true"/>
+              <font name="Bookman Old Style"/>
+              <foreground color="FFFFFF"/>
+            </properties>
+            <border type="none">
+              <font name="Bookman Old Style"/>
+              <title-color color="-1"/>
+            </border>
+            <children>
+              <component id="96313" class="javax.swing.JTree" binding="kingdomTree">
+                <constraints/>
+                <properties>
+                  <background color="-11512982"/>
+                  <doubleBuffered value="true"/>
+                  <editable value="false"/>
+                  <enabled value="true"/>
+                  <font name="Bookman Old Style"/>
+                  <foreground color="FFFFFF"/>
+                  <rootVisible value="false"/>
+                  <showsRootHandles value="true"/>
+                </properties>
+                <clientProperties>
+                  <JTree.lineStyle class="java.lang.String" value=""/>
+                </clientProperties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="8f352" binding="bottomPannel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties>
+          <background color="-11512982"/>
+          <font name="Bookman Old Style"/>
+          <foreground color="FFFFFF"/>
+        </properties>
+        <border type="none">
+          <title-color color="-1"/>
+        </border>
+        <children>
+          <grid id="4eedc" binding="progressionPannel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints/>
+            <properties>
+              <background color="-11512982"/>
+              <font name="Bookman Old Style"/>
+              <foreground color="FFFFFF"/>
+            </properties>
+            <border type="none">
+              <title-color color="-1"/>
+            </border>
+            <children>
+              <grid id="126a6" binding="progressionTextPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <background color="-11512982"/>
+                  <font name="Bookman Old Style"/>
+                  <foreground color="FFFFFF"/>
+                </properties>
+                <border type="none">
+                  <title-color color="-1"/>
+                </border>
+                <children>
+                  <component id="df4b2" class="javax.swing.JLabel" binding="progressionLabel">
+                    <constraints/>
+                    <properties>
+                      <background color="-11512982"/>
+                      <font name="Bookman Old Style"/>
+                      <foreground color="FFFFFF"/>
+                      <text value="Progression"/>
+                    </properties>
+                  </component>
+                  <component id="560c0" class="javax.swing.JLabel" binding="timeRemainingLabel">
+                    <constraints/>
+                    <properties>
+                      <background color="-11512982"/>
+                      <font name="Bookman Old Style"/>
+                      <foreground color="FFFFFF"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="2f759" binding="progressionBarPannel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                <constraints border-constraint="South"/>
+                <properties>
+                  <background color="-11512982"/>
+                  <font name="Bookman Old Style"/>
+                  <foreground color="FFFFFF"/>
+                </properties>
+                <border type="none">
+                  <title-color color="-1"/>
+                </border>
+                <children>
+                  <component id="bf33b" class="javax.swing.JProgressBar" binding="globalProgressionBar">
+                    <constraints/>
+                    <properties>
+                      <background color="-11512982"/>
+                      <font name="Bookman Old Style"/>
+                      <foreground color="FFFFFF"/>
+                      <preferredSize width="300" height="12"/>
+                      <string value=""/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="33b9b" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints/>
+            <properties>
+              <background color="-11512982"/>
+              <font name="Bookman Old Style"/>
+              <foreground color="FFFFFF"/>
+            </properties>
+            <border type="none">
+              <title-color color="-1"/>
+            </border>
+            <children>
+              <grid id="fd158" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <background color="-11512982"/>
+                  <font name="Bookman Old Style"/>
+                  <foreground color="FFFFFF"/>
+                </properties>
+                <border type="none">
+                  <title-color color="-1"/>
+                </border>
+                <children>
+                  <vspacer id="4fe0a">
+                    <constraints/>
+                  </vspacer>
+                </children>
+              </grid>
+              <grid id="db4f0" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                <constraints border-constraint="South"/>
+                <properties>
+                  <background color="-11512982"/>
+                  <font name="Bookman Old Style"/>
+                  <foreground color="FFFFFF"/>
+                </properties>
+                <border type="none">
+                  <title-color color="-1"/>
+                </border>
+                <children>
+                  <grid id="78afc" binding="actionPannel" layout-manager="FlowLayout" hgap="20" vgap="10" flow-align="1">
+                    <constraints/>
+                    <properties>
+                      <alignmentY value="0.5"/>
+                      <autoscrolls value="false"/>
+                      <background color="-11512982"/>
+                      <font name="Bookman Old Style"/>
+                      <foreground color="FFFFFF"/>
+                    </properties>
+                    <border type="none">
+                      <title-color color="-1"/>
+                    </border>
+                    <children>
+                      <component id="530bb" class="javax.swing.JButton" binding="executeButton">
+                        <constraints/>
+                        <properties>
+                          <alignmentY value="0.5"/>
+                          <background color="-11512982"/>
+                          <enabled value="true"/>
+                          <font name="Bookman Old Style"/>
+                          <foreground color="-16777216"/>
+                          <hideActionText value="false"/>
+                          <text value="Execute"/>
+                          <verticalTextPosition value="0"/>
+                        </properties>
+                        <clientProperties>
+                          <hideActionText class="java.lang.Boolean" value="false"/>
+                        </clientProperties>
+                      </component>
+                      <component id="12234" class="javax.swing.JButton" binding="interruptButton">
+                        <constraints/>
+                        <properties>
+                          <background color="-11512982"/>
+                          <enabled value="false"/>
+                          <font name="Bookman Old Style"/>
+                          <foreground color="-16777216"/>
+                          <text value="Interrupt"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="c6ae4" binding="optionsPanel" layout-manager="GridBagLayout">
+        <constraints border-constraint="East"/>
+        <properties>
+          <background color="-11512982"/>
+          <font name="Bookman Old Style"/>
+          <foreground color="FFFFFF"/>
+          <minimumSize width="452" height="415"/>
+          <preferredSize width="452" height="415"/>
+        </properties>
+        <border type="none">
+          <title-color color="-1"/>
+        </border>
+        <children>
+          <grid id="fe584" layout-manager="GridBagLayout">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-11512982"/>
+              <focusable value="false"/>
+              <font name="Bookman Old Style"/>
+              <foreground color="FFFFFF"/>
+            </properties>
+            <border type="none" title="Options" title-justification="2">
+              <title-color color="-1"/>
+            </border>
+            <children>
+              <grid id="3515" binding="kingdomPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag top="5" left="10" bottom="5" right="10" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-11512982"/>
+                  <font name="Bookman Old Style"/>
+                  <foreground color="FFFFFF"/>
+                </properties>
+                <border type="none" title="Kingdoms" title-justification="1">
+                  <title-color color="-1"/>
+                </border>
+                <children>
+                  <component id="5117a" class="javax.swing.JCheckBox" binding="virusesCheckBox">
+                    <constraints/>
+                    <properties>
+                      <background color="-11512982"/>
+                      <font name="Bookman Old Style"/>
+                      <foreground color="FFFFFF"/>
+                      <selected value="true"/>
+                      <text value="Viruses"/>
+                    </properties>
+                  </component>
+                  <component id="5117ay" class="javax.swing.JCheckBox" binding="organellesCheckBox">
+                    <constraints/>
+                    <properties>
+                      <background color="-11512982"/>
+                      <font name="Bookman Old Style"/>
+                      <foreground color="FFFFFF"/>
+                      <selected value="true"/>
+                      <text value="Organelles"/>
+                    </properties>
+                  </component>
+                  <component id="1e6ac" class="javax.swing.JCheckBox" binding="eukaryotaCheckBox">
+                    <constraints/>
+                    <properties>
+                      <background color="-11512982"/>
+                      <font name="Bookman Old Style"/>
+                      <foreground color="FFFFFF"/>
+                      <selected value="true"/>
+                      <text value="Eukaryota"/>
+                    </properties>
+                  </component>
+                  <component id="6396e" class="javax.swing.JCheckBox" binding="prokaryotesCheckBox">
+                    <constraints/>
+                    <properties>
+                      <background color="-11512982"/>
+                      <focusable value="true"/>
+                      <font name="Bookman Old Style"/>
+                      <foreground color="FFFFFF"/>
+                      <horizontalAlignment value="11"/>
+                      <selected value="true"/>
+                      <text value="Prokaryota"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="ada03" binding="zipPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag top="5" left="10" bottom="5" right="10" weightx="0.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <background color="-11512982"/>
+                  <font name="Bookman Old Style"/>
+                  <foreground color="FFFFFF"/>
+                </properties>
+                <border type="none" title="Zip" title-justification="1">
+                  <title-color color="-1"/>
+                  <color color="-16777216"/>
+                </border>
+                <children>
+                  <component id="da8c" class="javax.swing.JCheckBox" binding="genomesCheckBox">
+                    <constraints/>
+                    <properties>
+                      <background color="-11512982"/>
+                      <font name="Bookman Old Style"/>
+                      <foreground color="FFFFFF"/>
+                      <text value="Genomes"/>
+                    </properties>
+                  </component>
+                  <component id="9a2b0" class="javax.swing.JCheckBox" binding="genesCheckBox">
+                    <constraints/>
+                    <properties>
+                      <background color="-11512982"/>
+                      <font name="Bookman Old Style"/>
+                      <foreground color="FFFFFF"/>
+                      <selected value="false"/>
+                      <text value="Valid Genes"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="6a972" layout-manager="GridBagLayout">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-11512982"/>
+              <font name="Bookman Old Style"/>
+              <foreground color="FFFFFF"/>
+            </properties>
+            <border type="none" title="Progression" title-justification="2">
+              <title-color color="-1"/>
+            </border>
+            <children>
+              <grid id="db216" layout-manager="GridBagLayout">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag top="5" left="10" bottom="5" right="10" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-11512982"/>
+                  <font name="Bookman Old Style"/>
+                  <foreground color="FFFFFF"/>
+                </properties>
+                <border type="none" title="Download">
+                  <title-color color="-1"/>
+                </border>
+                <children>
+                  <grid id="3a053" layout-manager="GridBagLayout">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                      <gridbag top="10" left="15" bottom="10" right="15" weightx="1.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <background color="-11512982"/>
+                      <font name="Bookman Old Style"/>
+                      <foreground color="FFFFFF"/>
+                    </properties>
+                    <border type="none">
+                      <title-color color="-1"/>
+                    </border>
+                    <children>
+                      <component id="3f843" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <gridbag weightx="1.0" weighty="1.0"/>
+                        </constraints>
+                        <properties>
+                          <background color="-11512982"/>
+                          <font name="Bookman Old Style"/>
+                          <foreground color="FFFFFF"/>
+                          <text value="Downloaded"/>
+                        </properties>
+                      </component>
+                      <component id="8c1d0" class="javax.swing.JLabel" binding="downloadedLabel">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                          <gridbag weightx="1.0" weighty="1.0"/>
+                        </constraints>
+                        <properties>
+                          <background color="-11512982"/>
+                          <font name="Bookman Old Style"/>
+                          <foreground color="FFFFFF"/>
+                          <text value="-"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="fa84" layout-manager="GridBagLayout">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                      <gridbag top="10" left="15" bottom="10" right="15" weightx="1.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <background color="-11512982"/>
+                      <font name="Bookman Old Style"/>
+                      <foreground color="FFFFFF"/>
+                    </properties>
+                    <border type="none">
+                      <title-color color="-1"/>
+                    </border>
+                    <children>
+                      <component id="92e3d" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <gridbag weightx="1.0" weighty="1.0"/>
+                        </constraints>
+                        <properties>
+                          <background color="-11512982"/>
+                          <font name="Bookman Old Style"/>
+                          <foreground color="FFFFFF"/>
+                          <text value="Downloading"/>
+                        </properties>
+                      </component>
+                      <component id="4c4ba" class="javax.swing.JLabel" binding="downloadingLabel">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                          <gridbag weightx="1.0" weighty="1.0"/>
+                        </constraints>
+                        <properties>
+                          <background color="-11512982"/>
+                          <font name="Bookman Old Style"/>
+                          <foreground color="FFFFFF"/>
+                          <text value="-"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="8eca9" layout-manager="GridBagLayout">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <background color="-11512982"/>
+              <font name="Bookman Old Style"/>
+              <foreground color="FFFFFF"/>
+            </properties>
+            <border type="none" title="API Status">
+              <title-color color="-1"/>
+            </border>
+            <children>
+              <grid id="bf8ce" layout-manager="GridBagLayout">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag top="5" left="10" bottom="5" right="10" weightx="3.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-11512982"/>
+                  <font name="Bookman Old Style"/>
+                  <foreground color="FFFFFF"/>
+                </properties>
+                <border type="none">
+                  <title-color color="-1"/>
+                </border>
+                <children>
+                  <component id="38041" class="javax.swing.JLabel" binding="apiStatusLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <background color="-11512982"/>
+                      <font name="Bookman Old Style"/>
+                      <foreground color="FFFFFF"/>
+                      <horizontalTextPosition value="2"/>
+                      <maximumSize width="290" height="16"/>
+                      <preferredSize width="290" height="16"/>
+                      <text value="-"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="8252e" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-11512982"/>
+              <font name="Bookman Old Style"/>
+              <foreground color="FFFFFF"/>
+            </properties>
+            <border type="none" title="Statistics" title-justification="2">
+              <title-color color="-1"/>
+            </border>
+            <children>
+              <component id="78ed" class="javax.swing.JRadioButton" binding="filterFullStatisticsCheckBox">
+                <constraints/>
+                <properties>
+                  <background color="-11512982"/>
+                  <borderPainted value="false"/>
+                  <font name="Bookman Old Style"/>
+                  <foreground color="FFFFFF"/>
+                  <hideActionText value="false"/>
+                  <selected value="true"/>
+                  <text value="Full"/>
+                </properties>
+                <clientProperties>
+                  <hideActionText class="java.lang.Boolean" value="false"/>
+                </clientProperties>
+              </component>
+              <component id="756b9" class="javax.swing.JRadioButton" binding="filterBioProjectCheckBox">
+                <constraints/>
+                <properties>
+                  <background color="-11512982"/>
+                  <font name="Bookman Old Style"/>
+                  <foreground color="FFFFFF"/>
+                  <text value="BioProject"/>
+                </properties>
+              </component>
+              <component id="2143a" class="javax.swing.JTextField" binding="filterBioProjectTextField">
+                <constraints/>
+                <properties>
+                  <background color="-11512982"/>
+                  <caretColor color="-1"/>
+                  <columns value="10"/>
+                  <font name="Bookman Old Style"/>
+                  <foreground color="FFFFFF"/>
+                  <text value="BioProject..."/>
+                  <toolTipText value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="e3581" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-11512982"/>
+              <font name="Bookman Old Style"/>
+              <foreground color="FFFFFF"/>
+            </properties>
+            <border type="none">
+              <title-color color="-1"/>
+            </border>
+            <children/>
+          </grid>
+        </children>
+      </grid>
+      <hspacer id="63842">
+        <constraints border-constraint="West"/>
+      </hspacer>
+      <vspacer id="3da63">
+        <constraints border-constraint="First"/>
+      </vspacer>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="filterButtonGroup">
+      <member id="756b9"/>
+      <member id="78ed"/>
+    </group>
+  </buttonGroups>
+</form>
